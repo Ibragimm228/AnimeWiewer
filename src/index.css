@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body {
+    @apply overflow-x-hidden;
+}
+
+.menu-link {
+    @apply hover:bg-slate-900 px-8 py-5 lg:text-end;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    @apply bg-sky-500/50 w-12 h-12 rounded-full flex items-center justify-center;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    @apply text-3xl text-slate-50/50;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out;
+}
+
+.menu-link {
+  @apply hover:bg-slate-900 px-8 py-5 lg:text-end;
+}
+
+.anime-grid-container {
+  @apply grid lg:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-5 overflow-y-hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
