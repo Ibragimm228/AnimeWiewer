@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { Outlet, NavLink, useLocation } from 'react-router-dom';
 import { Footer } from '../Footer/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Home, Movie, Category, Collections } from '@mui/icons-material';
+import { Home, Movie } from '@mui/icons-material';
 
 export const Layout = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
